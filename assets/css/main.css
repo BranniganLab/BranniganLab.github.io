@@ -4514,3 +4514,32 @@ body {
 		}
 
 	}
+	
+	/* --- Lab Customizations --- */
+
+	/* Style the captions for the gallery */
+	figcaption {
+		padding: 1.25rem 0.5rem 0.5rem 0.5rem;
+		font-size: 1rem;
+		font-style: italic;
+		color: #777;
+		text-align: center;
+		line-height: 1.5;
+		display: block;
+	}
+
+	/* Style for the active filter button */
+	.active-tab {
+		background-color: slateblue !important;
+		color: #ffffff !important;
+		box-shadow: none !important;
+	}
+
+	/* Subtle border to the photo cards */
+	.photo-item figure {
+		border: 1px solid #eee;
+		border-radius: 4px;
+		padding-bottom: 10px;
+		background: #fff;
+		margin-bottom: 2rem !important;
+	}
