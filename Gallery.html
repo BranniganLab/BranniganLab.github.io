@@ -12,6 +12,7 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
+
 	<body class="is-preload">
 
 		<!-- Wrapper -->
@@ -44,55 +45,265 @@
 						</ul>
 					</nav>
 
-<!-- Main -->
+				<!-- Main -->
 					<div id="main">
-						<!-- Post -->
-							<section class="post">
-								<header class="major">	
-									<h1><span style="color: slateblue;">Life in the Lab<br /></span>
-									</h1>
-									</header>
+						<section class="post">
+							<header class="major">  
+								<h1><span style="color: slateblue;">Life in the Lab<br /></span></h1>
+							</header>
+
+							<ul class="actions special">
+								<li><button class="button primary active-tab" onclick="filterGallery('all', this)">All</button></li>
+								<li><button class="button" onclick="filterGallery('presentations', this)">Presentations</button></li>
+								<li><button class="button" onclick="filterGallery('celebrations', this)">Celebrations</button></li>
+								<li><button class="button" onclick="filterGallery('fun', this)">Fun!</button></li>
+							</ul>
+
+							<div id="gallery" class="row gtr-50 gtr-uniform">
+								
 
 
-<div id="gallery">
-	<span class = "image left"><img src="images/horses_2025.jpeg" alt="" /></span>
-	<span class = "image right"><img src="images/regina_horse_2025.jpeg" alt="" /></span>
-	<span class = "image left"><img src="images/mysterium_2025.jpeg" alt="" /></span>
-	<span class = "image right"><img src="images/connor_bps_2025.jpg" alt="" /></span>
-	<span class = "image left"><img src="images/bps_weyland_2025.HEIC" alt="" /></span>	
-	<span class = "image right"><img src="images/ezry_santabarb_2025.JPG" alt="" /></span>
-	<span class = "image left"><img src="images/ezry_jesse_santabarb_2025.JPG" alt="" /></span>
-	<span class = "image right"><img src="images/ezry_bps_2025.jpg" alt="" /></span>
-	<span class = "image left"><img src="images/ryan_2025.jpeg" alt="" /></span>
-	<span class = "image right"><img src="images/ryan_defense_2024.JPG" alt="" /></span>
-	<span class = "image left"><img src="images/jimthorpe_2024.PNG" alt="" /></span>
-	<span class = "image right"><img src="images/france_dinner_2024.JPG" alt="" /></span>
-	<span class = "image left"><img src="images/ferry4_2024.jpg" alt="" /></span>
-	<span class = "image right"><img src="images/axe_throwing_2024.jpg" alt="" /></span>
-	<span class = "image left"><img src="images/connor_ezry_chess.jpg" alt="" /></span>
-	<span class = "image right"><img src="images/gallery15.jpg" alt="" /></span>
-	<span class = "image right"><img src="images/escape_room_dinner.jpg" alt="" class="fit" /></span>
-	<span class = "image left"><img src="images/grace_ezry_jesse_firepit.jpeg" alt=""/></span>
-	<span class = "image left"><img src="images/gallery7.jpg" alt="" /></span>
-	<span class = "image right"><img src="images/gallery8.jpg" alt="" /></span>
-	<span class = "image left"><img src="images/gallery3.jpg" alt="" /></span>
-	<span class = "image right"><img src="images/gallery18.jpg" alt="" /></span>
-	<span class = "image left"><img src="images/gallery16.png" alt="" /></span>
-	<span class = "image right"><img src="images/ezry_swiss.jpg" alt="" /></span>
-	<span class = "image left"><img src="images/gallery6.jpg" alt="" /></span><br>
+								<div class="col-6 col-12-small photo-item fun">
+									<figure class="image fit">
+										<img src="images/NRT_colorado.JPG" alt="The NRT conference in Golden, Colorado, 2026" />
+										<figcaption>The NRT conference in Golden, Colorado, 2026</figcaption>
+									</figure>
+								</div>
 
-		   <br><center><span class = "image fit"><img src="images/escape_room.jpeg" alt="" /></span></center>
-			</div>
-	</section>
-		</div>
+								<div class="col-6 col-12-small photo-item celebrations">
+									<figure class="image fit">
+										<img src="images/SF_park_2026.PNG" alt="The NRT conference in Golden, Colorado, 2026" />
+										<figcaption>Celebrating Lindsey's first BPS talk at the Golden Gate Park, 2026</figcaption>
+									</figure>
+								</div>
+
+								<div class="col-6 col-12-small photo-item fun">
+									<figure class="image fit">
+										<img src="images/big_sur_cove.PNG" alt="Hike at Big Sur with the lab" />
+										<figcaption>Hiking in Big Sur, 2026</figcaption>
+									</figure>
+								</div>
+
+								<div class="col-6 col-12-small photo-item presentations">
+									<figure class="image fit">
+										<img src="images/grace_BPS_2026.PNG" alt="Grace presenting at BPS 2026" />
+										<figcaption>Grace presenting on our SAFEP method in San Fransisco during the Biophysical Society Conference, 2026</figcaption>
+									</figure>
+								</div>
+
+
+
+								<div class="col-6 col-12-small photo-item presentations">
+									<figure class="image fit">
+										<img src="images/jesse_BPS_2026.PNG" alt="Jesse presenting at BPS 2026" />
+										<figcaption>Jesse presenting on DTA in San Fransisco during the Biophysical Society Conference, 2026</figcaption>
+									</figure>
+								</div>
+
+								<div class="col-6 col-12-small photo-item presentations">
+									<figure class="image fit">
+										<img src="images/lindsey_BPS_2026.PNG" alt="Lindsey presenting at BPS 2026" />
+										<figcaption>Lindsey presenting on sequence specificity in IDPs in San Fransisco during the Biophysical Society Conference, 2026</figcaption>
+									</figure>
+								</div>
+								
+								
+
+
+			
+
+
+								<div class="col-6 col-12-small photo-item fun">
+									<figure class="image fit">
+										<img src="images/horses_2025.jpeg" alt="Horses" />
+										<figcaption>Meet & greet Regina's horses, 2025</figcaption>
+									</figure>
+								</div>
+
+
+								<div class="col-6 col-12-small photo-item fun">
+									<figure class="image fit">
+										<img src="images/ezry_santabarb_2025.JPG" alt="Conference" />
+										<figcaption>Ezry in Santa Barbara, 2025</figcaption>
+									</figure>
+								</div>
+
+
+								<div class="col-6 col-12-small photo-item fun">
+									<figure class="image fit">
+										<img src="images/bps_weyland_2025.HEIC" alt="BPS" />
+										<figcaption>Dinner with the Waylend Cheng lab in Los Angelos during the Biophysical Society Conference, 2025</figcaption>
+									</figure>
+								</div>
+
+								<div class="col-6 col-12-small photo-item presentations">
+									<figure class="image fit">
+										<img src="images/connor_bps_2025.jpg" alt="BPS" />
+										<figcaption>Connor presenting on Blobulation in Los Angelos during the Biophysical Society Conference, 2025</figcaption>
+									</figure>
+								</div>
+
+								<div class="col-6 col-12-small photo-item presentations">
+									<figure class="image fit">
+										<img src="images/ezry_bps_2025.jpg" alt="BPS" />
+										<figcaption>Ezry presenting on the SAFEP method in Los Angelos during the Biophysical Society Conference, 2025</figcaption>
+									</figure>
+								</div>
+
+								<div class="col-6 col-12-small photo-item celebrations">
+									<figure class="image fit">
+										<img src="images/mysterium_2025.jpeg" alt="Mysterium" />
+										<figcaption>Connor's paper submission celebration with board games, 2025</figcaption>
+									</figure>
+								</div>
+
+								<div class="col-6 col-12-small photo-item celebrations">
+									<figure class="image fit">
+										<img src="images/ryan_2025.jpeg" alt="Ryan" />
+										<figcaption>Ryan, Connor, and Jesse's Birthday celebration, 2025</figcaption>
+									</figure>
+								</div>
+
+
+
+								<div class="col-6 col-12-small photo-item celebrations">
+									<figure class="image fit">
+										<img src="images/ryan_defense_2024.JPG" alt="Ryan Defense" />
+										<figcaption>Celebration for Ryan's sucessful Master's thesis proposal, 2024</figcaption>
+									</figure>
+								</div>
+								<div class="col-6 col-12-small photo-item fun">
+									<figure class="image fit">
+										<img src="images/france_dinner_2024.JPG" alt="France Dinner" />
+										<figcaption>Lab dinner with collaborators in France, 2024</figcaption>
+									</figure>
+								</div>
+
+
+
+
+
+
+								<div class="col-6 col-12-small photo-item fun">
+									<figure class="image fit">
+										<img src="images/jimthorpe_2024.PNG" alt="Trip" />
+										<figcaption>Hiking in Jim Thorpe, 2024</figcaption>
+									</figure>
+								</div>
+								
+								<div class="col-6 col-12-small photo-item fun">
+									<figure class="image fit">
+										<img src="images/ferry4_2024.jpg" alt="Ferry Ride" />
+										<figcaption>Delaware River ferry ride, 2024</figcaption>
+									</figure>
+								</div>
+
+
+								<div class="col-6 col-12-small photo-item celebrations">
+									<figure class="image fit">
+										<img src="images/axe_throwing_2024.jpg" alt="Axe Throwing" />
+										<figcaption>Axe Throwing for Ezry's Birthday, 2024</figcaption>
+									</figure>
+								</div>
+
+
+
+								<div class="col-6 col-12-small photo-item presentations">
+									<figure class="image fit">
+										<img src="images/jahmal_bps_poster_2023.jpg" alt="Firepit" />
+										<figcaption>Jahmal presenting on nanoparticle aggregation in San Diego during the Biophysical Society conference, 2023</figcaption>
+									</figure>
+								</div>
+
+
+								<div class="col-6 col-12-small photo-item presentations">
+									<figure class="image fit">
+										<img src="images/ezry_swiss.jpg" alt="Switzerland" />
+										<figcaption>Ezry presenting in Switzerland, 2023</figcaption>
+									</figure>
+								</div>
+
+								<div class="col-6 col-12-small photo-item fun">
+									<figure class="image fit">
+										<img src="images/pinball.jpg" alt="Firepit" />
+										<figcaption>Pinball, 2023</figcaption>
+									</figure>
+								</div>
+
+								<div class="col-6 col-12-small photo-item fun">
+									<figure class="image fit">
+										<img src="images/grace_ezry_jesse_firepit.jpeg" alt="Firepit" />
+										<figcaption>Cocktails and a firepit with the lab, 2023</figcaption>
+									</figure>
+								</div>
+
+
+								<div class="col-6 col-12-small photo-item presentations">
+									<figure class="image fit">
+										<img src="images/ezry_bps_2023.JPG" alt="Ezry presenting in BPS 2023" />
+										<figcaption>Ezry presenting on ligand gated ion channels in San Diego during the Biophysical Society conference, 2023</figcaption>
+									</figure>
+								</div>
+
+								<div class="col-6 col-12-small photo-item fun">
+									<figure class="image fit">
+										<img src="images/connor_ezry_chess.jpg" alt="Chess" />
+										<figcaption>Connor vs. Ezry: The Chess Match, 2022</figcaption>
+									</figure>
+								</div>
+
+								<div class="col-6 col-12-small photo-item fun">
+									<figure class="image fit">
+										<img src="images/gallery8.jpg" alt="Escape Room" />
+										<figcaption>Noureen and Regina at Long Wood Gardens, 2022</figcaption>
+									</figure>
+								</div>
+
+								<div class="col-6 col-12-small photo-item fun">
+									<figure class="image fit">
+										<img src="images/gallery3.jpg" alt="Escape Room" />
+										<figcaption>Jahmal showing off his really cool results, 2022</figcaption>
+									</figure>
+								</div>
+
+
+								<div class="col-6 col-12-small photo-item fun">
+									<figure class="image fit">
+										<img src="images/escape_room_dinner.jpg" alt="Dinner" />
+										<figcaption>Dinner with prospective students, 2021</figcaption>
+									</figure>
+								</div>
+
+								<div class="col-6 col-12-small photo-item fun">
+									<figure class="image fit">
+										<img src="images/escape_room.jpeg" alt="Escape Room" />
+										<figcaption>Escape Room, 2021</figcaption>
+									</figure>
+								</div>
+
+
+	
+
+								<div class="col-6 col-12-small photo-item fun">
+									<figure class="image fit">
+										<img src="images/gallery18.jpg" alt="Escape Room" />
+										<figcaption>Fun in Los Angelos, 2020</figcaption>
+									</figure>
+								</div>
+
+							</div>
+
+							</div>
+						</section>
+					</div>
 		
-  <!-- Copyright -->
+				<!-- Copyright -->
 					<div id="copyright">
 						<li>Background Image: Ezry Santiago-McRae</li>
 						<br>
 						<ul><li>&copy; 	HTML5UP</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
 					</div>
-
+					
 			</div>
 
 		<!-- Scripts -->
@@ -103,8 +314,28 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+
+		
+		<!-- Actions -->
+			<script>
+				function filterGallery(category, btn) {
+					// Highlight button
+					const buttons = document.querySelectorAll('.actions .button');
+					buttons.forEach(b => b.classList.remove('active-tab', 'primary'));
+					btn.classList.add('active-tab', 'primary');
+
+					// Filter items
+					const items = document.querySelectorAll('.photo-item');
+					items.forEach(item => {
+						if (category === 'all' || item.classList.contains(category)) {
+							item.style.display = 'block';
+						} else {
+							item.style.display = 'none';
+						}
+					});
+				}
+			</script>
 	
 	</body>
- 
- 			
+	
 </html>
