@@ -1,23 +1,38 @@
-#Gallery {
-   line-height:0;
-   -webkit-column-count:5; /* split it into 5 columns */
-   -webkit-column-gap:5px; /* give it a 5px gap between columns */
-   -moz-column-count:5;
-   -moz-column-gap:5px;
-   column-count:5;
-   column-gap:5px;
+/* 1. Reset the container for the filtering logic */
+#gallery {
+    display: flex !important;
+    flex-wrap: wrap !important;
 }
 
-#Gallery img {
-   width: 100% !important;
-   height: auto !important;
-   margin-bottom:5px; /* to match column gap */
+/* 2. Style the "Card" around the photo */
+figure {
+    margin: 0 0 2rem 0 !important;
+    background: #ffffff;
+    border: 1px solid #eeeeee;
+    border-radius: 4px;
+    padding-bottom: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
 }
 
-@media (max-width: 1200px) {
-   #gallery {
-    -moz-column-count:    4;
-    -webkit-column-count: 4;
-    column-count:         4;
-   }
+/* 3. The Image - Let it be large (original style) */
+.photo-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* 4. The Caption */
+figcaption {
+    font-size: 0.9rem;
+    font-style: italic;
+    color: #555;
+    padding: 15px 10px 5px 10px;
+    text-align: center;
+    line-height: 1.4;
+}
+
+/* 5. Button Highlight */
+.active-tab {
+    background-color: slateblue !important;
+    color: #ffffff !important;
 }
