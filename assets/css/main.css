@@ -3447,7 +3447,7 @@ body {
 		line-height: 4rem;
 		margin: -4rem auto 0 auto;
 		overflow: hidden;
-		padding: 0 2rem 0 0;
+		padding: 0 1.6rem 0 0;
 		position: relative;
 		width: calc(100% - 4rem);
 		max-width: 72rem;
@@ -3520,7 +3520,7 @@ body {
 			flex-shrink: 1;
 			font-family: "Source Sans Pro", Helvetica, sans-serif;
 			font-weight: 900;
-			letter-spacing: 0.075em;
+			letter-spacing: 0.075rem;
 			list-style: none;
 			margin-bottom: 0;
 			padding-left: 0;
@@ -3540,7 +3540,7 @@ body {
 					display: block;
 					font-size: 0.8rem;
 					outline: none;
-					padding: 0 2rem;
+					padding: 0 1.6rem;
 				}
 
 					#nav ul.links li a:hover {
@@ -4417,7 +4417,6 @@ body {
 					border-bottom: 0;
 					display: block;
 					font-family: "Source Sans Pro", Helvetica, sans-serif;
-					font-size: 0.9rem;
 					font-size: 0.9rem;
 					font-weight: 900;
 					letter-spacing: 0.075em;
