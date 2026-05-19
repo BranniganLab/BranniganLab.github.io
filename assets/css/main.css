@@ -4541,20 +4541,21 @@ body {
 	.photo-item {
 		flex: 0 0 50%;
 		max-width: 50%;
-		padding: 0.5rem;
-		border: 4pt;
+		padding: 1rem;
 		box-sizing: border-box;
 
 		overflow: hidden;
-		background: transparent;
+		background: white;
 		position: relative;
 		overflow: visible;
+
+		transition: transform 0.3s ease;
+		transform-origin: center;
 		z-index: 1;
+
 	}
 
-	.photo-item:hover {
-		z-index: 9999;
-	}
+
 
 
 	/* =========================
@@ -4567,7 +4568,7 @@ body {
 	}
 
 	.photo-item figcaption {
-		padding: 8px 0 10px;
+		padding: 9px 0 10px;
 		font-size: 0.85rem;
 		line-height: 1.3;
 		font-style: italic;
@@ -4582,20 +4583,17 @@ body {
 
 	.photo-item img {
 		width: 100%;
-		height: 300px;
+		height: 320px;
 		display: block;
 		position: relative;
 		z-index: 1;
 		object-fit: cover;
 
-		transition:
-			opacity 0.3s ease,
-			transform 0.3s ease,
-			box-shadow 0.3s ease;
+		transition: opacity 0.3s ease, transform 0.3s ease;
 	}
 
 	/* =========================
-	Gallery hover behavior
+	Hover behavior
 	========================= */
 
 	/* Dim all images */
@@ -4603,19 +4601,25 @@ body {
 		opacity: 0.35;
 	}
 
+	#gallery:hover .photo-item figcaption {
+		opacity: 0.35;
+	}
+
+	#gallery .photo-item:hover figcaption {
+		opacity: 1;
+	}
+
 	/* Highlight hovered image */
 	#gallery .photo-item:hover img {
 		opacity: 1;
-		background: transparent;
-
 		object-fit: contain;
-
-		transform: scale(1.4);
-
 		position: relative;
 		z-index: 9999;
+	}
 
-		box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+	.photo-item:hover {
+		z-index: 9999;
+		transform: scale(1.05);
 	}
 
 
