@@ -4516,70 +4516,124 @@ body {
 	}
 	
 	/* --- Photo gallery styles --- */
+	/* =========================
+	Active filter button
+	========================= */
 
-	/* Style for the active filter button */
 	.active-tab {
 		background-color: slateblue !important;
-		color: #ffffff !important;
+		color: #fff !important;
 		box-shadow: none !important;
 	}
 
+
+	/* =========================
+	Gallery layout
+	========================= */
+
+	#gallery {
+		display: flex;
+		flex-wrap: wrap;
+		width: 100%;
+		margin: 0;
+	}
+
+	.photo-item {
+		flex: 0 0 50%;
+		max-width: 50%;
+		padding: 0.5rem;
+		border: 4pt;
+		box-sizing: border-box;
+
+		overflow: hidden;
+		background: transparent;
+		position: relative;
+		overflow: visible;
+		z-index: 1;
+	}
+
+	.photo-item:hover {
+		z-index: 9999;
+	}
+
+
+	/* =========================
+	Figure + caption
+	========================= */
+
 	.photo-item figure {
-		width: 10px;
-		object-fit: cover;
+		margin: 0;
 		cursor: pointer;
-		transition: transform 0.2s;
 	}
 
-	.photo-item figure:hover {
-		transform: scale(1.05);
-	}
-
-    /* Ensure the caption stays tucked under the image */
-    .photo-item figcaption {
-        font-size: 0.85rem;
-        line-height: 1.3;
-        padding: 10px 0 10px 0; /* Added bottom padding for spacing between rows */
+	.photo-item figcaption {
+		padding: 8px 0 10px;
+		font-size: 0.85rem;
+		line-height: 1.3;
 		font-style: italic;
 		color: #777;
 		text-align: center;
-    }
-
-	/* Force the gallery to behave as a flex row */
-	#gallery {
-		display: flex !important;
-		flex-wrap: wrap !important;
-		width: 100% !important;
-		margin: 0 !important;
 	}
 
-	/* Force each item to be exactly 1/3rd width on desktop */
-	.photo-item {
-		flex: 0 0 33.333% !important;
-		max-width: 33.333% !important;
-		padding: 1rem !important; /* Adjust padding for spacing between photos */
-		box-sizing: border-box !important;
-	}
 
-	/* Ensure images keep their ratio and don't overflow */
+	/* =========================
+	Images
+	========================= */
+
 	.photo-item img {
-		width: 100% !important;
-		height: auto !important;
+		width: 100%;
+		height: 300px;
 		display: block;
+		position: relative;
+		z-index: 1;
+		object-fit: cover;
+
+		transition:
+			opacity 0.3s ease,
+			transform 0.3s ease,
+			box-shadow 0.3s ease;
 	}
 
-	/* Responsive: 2 in a row for tablets */
+	/* =========================
+	Gallery hover behavior
+	========================= */
+
+	/* Dim all images */
+	#gallery:hover .photo-item img {
+		opacity: 0.35;
+	}
+
+	/* Highlight hovered image */
+	#gallery .photo-item:hover img {
+		opacity: 1;
+		background: transparent;
+
+		object-fit: contain;
+
+		transform: scale(1.4);
+
+		position: relative;
+		z-index: 9999;
+
+		box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+	}
+
+
+	/* =========================
+	Responsive
+	========================= */
+
 	@media screen and (max-width: 980px) {
 		.photo-item {
-			flex: 0 0 50% !important;
-			max-width: 50% !important;
+			flex: 0 0 50%;
+			max-width: 50%;
 		}
 	}
 
-	/* Responsive: 1 in a row for phones */
 	@media screen and (max-width: 480px) {
 		.photo-item {
-			flex: 0 0 100% !important;
-			max-width: 100% !important;
+			flex: 0 0 100%;
+			max-width: 100%;
 		}
 	}
+
